@@ -1,0 +1,60 @@
+.dropdown{
+    position: relative;
+    top: -28px;
+    left: 60px;
+    margin-left: 60px;
+}
+.para1{
+    position: relative;
+    right: 15px;
+    top: 10px;
+}
+
+.para2{
+    position: relative;
+    right: 15px;
+}
+
+.number{
+    position: relative;
+    top: -40px;
+    left: 120px;
+}
+
+.choose{
+    position: relative;
+    top: 10px;
+    right: 15px;
+}
+
+.submit{
+    position: relative;
+    left:115px;
+    bottom: 10px;
+}
+
+.main{
+    /* text-align: center; */
+    position: relative;
+    top: 200px;
+    border: solid 1px black;
+    width: 350px;
+    height:250px;
+    margin-left: 30%;
+    padding: 20px;
+    border-radius: 10%;
+    background-color:#F3CCFF;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  
+    .main{
+        margin-left: 40%;
+    }
+  }

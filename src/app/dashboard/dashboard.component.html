@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-warning">
+    <div class="container-fluid">
+      <h1>Dashboard</h1>
+      <div class="d-flex">
+        <a href = "./login" class="btn btn-dark">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main">
+  <div class="upload">
+    <form [formGroup] = "pass" (ngSubmit)="ToBackend()">
+    <input class="choose" type="file" #fileImportInput name = "File Upload" id = "csvUpload" value="Upload file" accept=".csv"/>
+    <br>
+    <br>
+    <p class="para1">Interval</p>
+    <div class="dropdown">
+      <select class="interval">
+        <option>Weekly</option>
+        <option>Yearly</option>
+      </select>
+    </div>
+
+    <p class="para2">No of weeks/years</p>
+    <div class="number">
+      <input type="number">
+    </div>
+    <div class="submit">
+        <input class = "btn btn-success" type="submit" value = "Submit">
+    </div>
+</form>
+  </div>
+</div>
+</body>
+</html>
+<router-outlet></router-outlet>

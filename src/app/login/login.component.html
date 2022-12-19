@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form [formGroup]="login" (ngSubmit)="logindata()" class="form-box">
+            <h3>Login</h3>
+            <div class="form-group">
+                <label>Enter email</label>
+                <input type="text" formControlName="email" class="form-control mb-3 mt-3" placeholder="Enter Email"/>
+            </div>
+    
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" formControlName="password" class="form-control mb-3 mt-3" placeholder="Enter Password"/>
+            </div>
+    
+            <span>Create New Account <a href="./singup">Singup</a></span>
+            <br/>
+            <button type="submit" class="btn btn-success">Login</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<router-outlet></router-outlet>
